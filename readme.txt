@@ -15,7 +15,7 @@ packages required
 
 
 3)sound generation:
-sound_gen file generates 3s sound file
+sound_gen file generates 3s sound file (samples per second = 44100)
 
 4) RSA key pair generation
 requirements
