@@ -14,10 +14,11 @@ def array(r, c):
         to_return.append(f_l[i:i + c])
     return to_return
 
-sz = 128
-RGB = np.zeros((sz, sz, 3), 'uint8')
-RGB[..., 0] = array(sz, sz)
-RGB[..., 1] = array(sz, sz)
-RGB[..., 2] = array(sz, sz)
-img = Image.fromarray(RGB)
-img.save('solution.jpeg')
+def image_gen():
+    sz = 128
+    RGB = np.zeros((sz, sz, 3), 'uint8')
+    RGB[..., 0] = array(sz, sz)
+    RGB[..., 1] = array(sz, sz)
+    RGB[..., 2] = array(sz, sz)
+    img = Image.fromarray(RGB)
+    img.save('solution.jpeg')
